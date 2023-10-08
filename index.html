@@ -1,3 +1,4 @@
+<!--Proyecto de adopta un amigo-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,193 +11,332 @@
     <!--CSS de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
+
   <body>
-    <!--
-      Principio de la pagina. 
-      Aqui esta el logo y el navbar que tiene otros servicios de la organizacion de adopcion de mascotas
-    -->
-    <header class="backhead">
-      <!--Titulo de la pagina-->
-      <a href="#">
-        <img src="images/adpt_amg_trnsp_shrt.png" alt="Logo de Adopta un Amigo" id="logo" style="height: 60px; " />
-      </a>
-    </header>
-    <!--Navbar para los otros servicios-->
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#acerca">Acerca de</a></li>
-        <li><a href="#ayudar">Cómo Ayudar</a></li>
-        <li><a href="#historias">Historias de Adopción</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <section id="banner">
-      <h1>Dale una segunda oportunidad a un amigo fiel</h1>
-      <button id="conoceBtn">Conoce a nuestros perros</button>
-    </section>
-
-    <section id="acerca">
-      <h2>Acerca de Nosotros</h2>
-      <p>Nosotros somos una fundacion que rescata perros abandonados y les buscamos nuevos hogares. Nos aseguramos que las personas que van a adoptar un perro sepan de como cuidarlo. Hemos estado rescatando y buscando hogares perros por 15 años.</p>
-      <!-- Puedes agregar contenido aquí -->
-    </section>
-
-    <!--Nuevo "Mira a nuestros perros"-->
-    <h2>Nuestros Perros para Adopción</h2>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="images\pexels-dominika-roseclay-2023384.jpg" class="card-img-top" alt="Mia" style="width: 200px;">
-            <h5 class="card-title">Mia</h5>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images\pexels-pixabay-220938.jpg" class="card-img-top" alt="Max" style="width: 200px;">
-            <h5 class="card-title">Max</h5>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images\pexels-charles-1851164.jpg" class="card-img-top" alt="Luna" style="width: 200px;">
-            <h5 class="card-title">Luna</h5>
-          </div>
+    <!--Nuevo navbar-->
+    <nav class="navbar navbar-expand-lg" style="background-color: orange;">
+      <div class="container-fluid">
+        <!--Logo-->
+        <a class="navbar-brand" href="#">
+          <img src="images/adpt_amg_trnsp_shrt.png" alt="Logo de Adopta un Amigo" id="logo" style="height: 60px; " />
+        </a>
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" \
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: orange;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Cómo Ayudar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Historias de Adopción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+
+    <div class="container-lg" style="background-color: lightgray;">
+      <!--
+        Principio de la pagina. 
+        Aqui esta el logo y el navbar que tiene otros servicios de la organizacion de adopcion de mascotas
+      -->
+
+      <section id="banner">
+        <div class="parallax"></div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h1>Dale una segunda oportunidad a un amigo fiel</h1>
+              <br>
+              <button id="conoceBtn" type="button" class="btn" style="background-color: orange;"><h4>Conoce a nuestros perros</h4></button>
+              <br><br>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+      <section id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>Nosotros somos una fundacion que rescata perros abandonados y les buscamos nuevos hogares. Nos aseguramos que las personas que van a adoptar un perro sepan de como cuidarlo. Hemos estado rescatando y buscando hogares perros por 15 años.</p>
+        <!-- Puedes agregar contenido aquí -->
+      </section>
+  
+  
+  
+      <!--Nuevo  Mira a nuestros perros-->
+      <section id="perros">
+        <div class="">
+          <h2>Nuestros Perros para Adopción</h2>
+        </div>
+        <br>
+        <div class="container">
+          <div class="container" style="background-color: white;">
+            <!--Empieza 1-3 -->
+            <div class="row border-top">
+              <!--#1 Empieza perrito-->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <img src="images\pexels-dominika-roseclay-2023384.jpg" class="card-img-top" alt="Mia"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Mia</h3>
+                  </div>
+                </div>
+              </div>
+              <!--#1 Termina perrito-->
+              <!--#2 Empieza perrito-->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <img src="images\pexels-pixabay-220938.jpg" class="card-img-top" alt="Max"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Max</h3>
+                  </div>
+                </div>
+              </div>
+              <!--#2 Termina perrito-->
+              <!--#3 Empieza perrito-->
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <img src="images\pexels-charles-1851164.jpg" class="card-img-top" alt="Luna"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Luna</h3>
+                  </div>
+                </div>
+              </div>
+              <!--#3 Termina perrito-->
+            </div>
+            <hr>
+            <!--Termina 1-3 y empieza 4-6 -->
+            <div class="row border-top">
+              <!--#4 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-viridiana-rivera-16623474.jpg" class="card-img-top" alt="Charlie"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Charlie</h3>
+                  </div>
+                </div>
+              </div>
+              <!--#4 Termina perrito-->
+              <!--#5 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-dominika-roseclay-895259.jpg" class="card-img-top" alt="Daisy"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Daisy</h3>
+                  </div>
+                </div>
+              </div>        
+              <!--#5 Termina perrito-->
+              <!--#6 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-tanika-3687770.jpg" class="card-img-top" alt="Toby"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Toby</h3>
+                  </div>
+                </div>
+              </div>
+            <!--#6 Termina perrito-->
+            </div>
+            <hr>
+            <!--Termina 4-6 empieza 7-9 -->
+            <div class="row border-top">
+              <!--#7 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-goochie-poochie-grooming-3361739.jpg" class="card-img-top" alt="Hank"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Hank</h3>
+                  </div>
+                </div>
+              </div>
+              <!--#7 Termina perrito-->
+              <!--#8 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-cottonbro-studio-4056462.jpg" class="card-img-top" alt="Zeus"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Zeus</h3>
+                  </div>
+                </div>
+              </div>        
+              <!--#8 Termina perrito-->
+              <!--#9 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-anna-shvets-4588435.jpg" class="card-img-top" alt="Charlie"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Charlie</h3>
+                  </div>
+                </div>
+              </div>
+            <!--#9 Termina perrito-->
+            </div>
+            <hr>
+            <!--Termina 7-9 empieza 10-12 -->
+            <div class="row border-top">
+              <!--10 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-dominika-roseclay-3104709.jpg" class="card-img-top" alt="Bailey"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Bailey</h3>
+                  </div>
+                </div>
+              </div>
+              <!--#10 Termina perrito-->
+              <!--#11 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-samson-katt-5255202.jpg" class="card-img-top" alt="Rosa"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Rosa</h3>
+                  </div>
+                </div>
+              </div>        
+              <!--#11 Termina perrito-->
+              <!--#12 Empieza perrito-->
+              <div class="col-md-4 mt-4">
+                <div class="card md-4 shadow-sm">
+                  <img src="images\pexels-sam-lion-5732474.jpg" class="card-img-top" alt="Sofia"/>
+                  <div class="card-body">
+                    <h3 class="card-title">Sofia</h3>
+                  </div>
+                </div>
+              </div>
+            <!--#12 Termina perrito-->
+            </div>
+            <!--Termina 10-12 -->
+          </div>
+        </div>
+      </section>
     </div>
 
-    
-    <!--Imagenes de perritos-->
-    <section id="perros">
-      <h2>Nuestros Perros para Adopción</h2>
-      <!-- 
-            Debes añadir imágenes de perros, utiliza una tabla para colocar las imágenes.
-            Al menos 10 imágenes de perros.
-           -->
-      <!--
-      <table>
-        <tr>
-          <td><h3 style="text-align: center;">Mia</h3></td>
-          <td><h3 style="text-align: center;">Max</h3></td>
-        </tr>
-        <tr>
-          <td><img src="images\pexels-dominika-roseclay-2023384.jpg" alt="Mia" style="width: 400px;"/></td>
-          <td><img src="images\pexels-pixabay-220938.jpg" alt="Max" style="width: 400px;"/></td>
-        </tr>
-        <tr>
-          <td><h3 style="text-align: center;">Luna</h3></td>
-          <td><h3 style="text-align: center;">Charlie</h3></td>
-        </tr>
-        <tr>
-          <td><img src="images\pexels-charles-1851164.jpg" alt="Luna" style="width: 400px;"/></td>
-          <td><img src="images\pexels-viridiana-rivera-16623474.jpg" alt="Charlie" style="width: 400px;"/></td>
-        </tr>
-        <tr>
-          <td><h3 style="text-align: center;">Daisy</h3></td>
-          <td><h3 style="text-align: center;">Toby</h3></td>
-        </tr>
-        <tr>
-          <td><img src="images\pexels-dominika-roseclay-895259.jpg" alt="Daisy" style="width: 400px;"/></td>
-          <td><img src="images\pexels-tanika-3687770.jpg" alt="Toby" style="width: 400px;"/></td>
-        </tr>
-        <tr>
-          <td><h3 style="text-align: center;">Hank</h3></td>
-          <td><h3 style="text-align: center;">Zeus</h3></td>
-        </tr>
-        <tr>
-          <td><img src="images\pexels-goochie-poochie-grooming-3361739.jpg" alt="Hank" style="width: 400px;"/></td>
-          <td><img src="images\pexels-cottonbro-studio-4056462.jpg" alt="Zeus" style="width: 400px;"/></td>
-        </tr>
-        <tr>
-          <td><h3 style="text-align: center;">Charlie</h3></td>
-          <td><h3 style="text-align: center;">Bailey</h3></td>
-        </tr>
-        <tr>
-          <td><img src="images\pexels-anna-shvets-4588435.jpg" alt="Charlie" style="width: 400px;"/></td>
-          <td><img src="images\pexels-dominika-roseclay-3104709.jpg" alt="Bailey" style="width: 400px;"/></td>
-        </tr>
-        <tr>
-          <td><h3 style="text-align: center;">Rosa</h3></td>
-          <td><h3 style="text-align: center;">Sofia</h3></td>
-        </tr>
-        <tr>
-          <td><img src="images\pexels-samson-katt-5255202.jpg" alt="Rosa" style="width: 400px;"/></td>
-          <td><img src="images\pexels-sam-lion-5732474.jpg" alt="Sofia" style="width: 400px;"/></td>
-        </tr>
-      </table>     
-    </section>
-    -->
 
-    <section id="ayudar">
-      <h2>Cómo Ayudar</h2>
-      <p>Como sabes hay muchos perritos que terminan sin casa por que dueños que no pueden cuidarlos los abandonan. </p>
-      <!-- Debes agregar contenido aquí -->
-    </section>
+    <div class="container-lg" style="background-color: lightgray;">
+      <br>
+      <section id="historias">
+        <!--Seccion de las historias que los dueños tienen con su/s nuevo/s perrito/s o -->
+          <div class="container">
+            <h2>Historia de adopcion</h2>
+            <div class="row border-top">
+              <div class="col-6">
+                <div class="card mb-4 shadow-sm">
+                  <img src="images/fam1.jpg" class="card-img-top" alt="Familia con perro 1"/>
+                  <div class="card-body">
+                    <h3 class="card-body">"Desde que adoptamos a Marley no hay un dia que los niños no estan alegres. No nos arrepentimos de esta descion."</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card mb-4 shadow-sm">
+                  <img src="images/fam2.jpg" class="card-img-top" alt="Familia con perro 2"/>
+                  <div class="card-body">
+                    <h3 class="card-body">"Marcus era lo que le faltaba a nuestra familia. Cada dia es como una aventura con el."</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
 
-    <!--Seccion de las historias que los dueños tienen con su/s nuevo/s perrito/s o -->
-    <section id="historias">
-      <!-- Debes agregar contenido aquí -->
-      <!--
-      <h2>Historias de Adopción</h2>
-      <table>
-        <tr>
-          <td>
-            <img src="images/fam1.jpg" alt="Perro y Familia">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h3>"Desde que adoptamos a Marley no hay un dia que los niños no estan alegres."</h3>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="images/fam2.jpg" alt="Perro y familia">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h3>"Marcus era lo que le faltaba a nuestra familia. Cada dia es como una aventura con el."</h3>
-          </td>
-        </tr>
-      </table>
-      -->
-    </section>
+      <section id="ayudar">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2>Cómo Ayudar</h2>
+              <p>Como sabes hay muchos perritos que terminan sin casa por que sus dueños no podian cuidarlos y los abandonan. Puedes ayudar a estos perritos de differentes maneras que no tiene que ser adoptandolos. Undiendo el boton de abajo te llevara a una pagina que te explicara en detalle las maneras que puedes ayudar.</p>
+              <br>
+              <button type="button" class="btn" style="background-color: orange;">Maneras de ayudar</button>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
 
-    <br>
-    <br>
-
+  
     <!--
       Parte mas baja de la pagina de web. 
       Donde esta los detalles de la organizacion de adopcion de mascotas
     -->
-    <footer>
-      <!-- 
-            Debes agregar contenido de pie de página aquí.
-            Incluye una dirección física.
-            Incluye una dirección de correo postal.
-            Desarrolla una lista NO ORDENADA (ul) con los siguientes datos:
-                Un número de telefono (no real).
-                Un correo electrónico (no real).
-                Un enlace a facebook (no real).
-                Un enlace a instagram (no real)
-         -->
-      <ul style="padding-top: 10px;">
-        <li class="lightwrd">Dirección fisica: San juan PR Calle 23</li>
-        <br>
-        <li class="lightwrd">Dirección de correo postal: PO BOX 1325, San Juan 00235-2354</li>
-        <br>
-        <li class="lightwrd">Numero de telefono: 123-456-7891</li>
-        <br>
-        <li class="lightwrd">Correo electronico: adoptaunamigo@email.com</li>
-        <br>
-        <li class="lightwrd"><a href="#">Visitanos en Facebook</a></li>
-        <li class="lightwrd"><a href="#">Visitanos en Instagram</a></li>
-      </ul>
-    </footer>
+    
+    
+      <footer class="mt-0 shadow">
+        <!-- 
+              Debes agregar contenido de pie de página aquí.
+              Incluye una dirección física.
+              Incluye una dirección de correo postal.
+              Desarrolla una lista NO ORDENADA (ul) con los siguientes datos:
+                  Un número de telefono (no real).
+                  Un correo electrónico (no real).
+                  Un enlace a facebook (no real).
+                  Un enlace a instagram (no real)
+           -->
+        <!--Footer con modos de contactos-->
+        <div class="container-fluid">
+          <div class="row p-5 bg-dark text-white">
+            <div class="col">
+              <h3>Dirección Física</h3>
+              <p>
+                Calle 134<br>
+                Sector Calle Linda<br>
+                San Juan, PR 00235
+              </p>
+              <hr>
+              <h3>Dirección Postal</h3>
+              <p>
+                PO BOX 654984<br>
+                San Juan, PR 00235
+              </p>
+            </div>
+            <div class="col-4"></div>
+            <div class="col">
+              <h3>Numero de telefono</h3>
+              <p>
+                123-456-7891
+              </p>
+              <hr>
+              <h3>Email</h3>
+              <p>
+                adoptaunamigo@email.com
+              </p>
+              <hr>
+              <h3>Medios sociales</h3>
+              <h2>
+                <a href="http://facebook.com" target="_blank" class="btn btn-primary fs-5 tn btn-primary"><i class="bi bi-facebook"></i>  Facebook</a>
+
+                <a href="http://facebook.com" target="_blank" class="btn btn-primary fs-5 tn btn-primary"><i class="bi bi-instagram"></i>  Instagram</a>  
+              </h2>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!--Mi javascript-->
 
     <!--Bootstrap javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

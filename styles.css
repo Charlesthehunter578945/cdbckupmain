@@ -43,3 +43,19 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("images/family_dog_home.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

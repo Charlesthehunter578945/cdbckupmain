@@ -1,0 +1,26 @@
+.parallax {
+  /* The image used */
+  background-image: url("images/wallppr_code.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.drk_background_acc {
+  background-color: darkblue;
+  color: black;
+}
+
+.drk_background {
+  background-color: black;
+}
+
+.lght_wrds {
+  color: white;
+}

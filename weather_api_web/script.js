@@ -18,10 +18,13 @@ $(document).ready(function () {
                     <strong>Temperatura:</strong>
                     ${day.main.temp}°F 
                     <br>
+                    <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png">
                     <strong>Descripción:</strong> 
                     ${day.weather[0].description} 
                     <br>
-                    <hr>`;
+                    
+                    <hr>
+                    `;
     
                 });
     
@@ -30,10 +33,10 @@ $(document).ready(function () {
             },
     
             error: function () {
-    $("#weatherResult").html(
-        "<p>Error al obtener el clima. Por favor, inténtalo de nuevo.</p>"
-    );
-    },
-});
-}); 
+                $("#weatherResult").html(
+                    "<p>Error al obtener el clima. Por favor, inténtalo de nuevo.</p>"
+                );
+            },
+        });
+    }); 
 });

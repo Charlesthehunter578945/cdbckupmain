@@ -1,3 +1,15 @@
 .bckgroundclr {
+    background-color: slategray;
+}
+
+.cntainr-dtls {
     background-color: darkslategray;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+hr {
+    font-size: large;
 }

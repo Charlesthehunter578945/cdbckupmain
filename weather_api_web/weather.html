@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather proyecto</title>
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="./style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- jQuery -->
@@ -11,13 +13,13 @@
     <!-- Bootstrap JS (opcional) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="bckgroundclr">
     
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body cntainr-dtls">
                         <h5 class="card-title">Consulta el clima para una semana</h5>
                         <div class="form-group">
                             <label for="location">Ubicación:</label>
@@ -31,7 +33,7 @@
                         <button id="checkWeather" class="btn btn-primary">Ver clima</button>
                     </div>
                 </div>
-                <div id="weatherResult" class="mt-4"></div>
+                <div id="weatherResult" class="mt-4 cntainr-dtls p-3"></div>
                 <br>
             </div>
         </div>
